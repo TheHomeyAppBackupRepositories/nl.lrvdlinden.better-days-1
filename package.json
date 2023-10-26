@@ -1,0 +1,18 @@
+{
+  "name": "nl.lrvdlinden.better-days",
+  "version": "1.0.0",
+  "description": "Better Days for your smarthome.",
+  "author": "homey@vdlinden.xyz",
+  "license": "GPL-3.0-or-later",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lrvdlinden/nl.lrvdlinden.better-days"
+  },
+  "main": "app.js",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts --ignore-path .gitignore ."
+  },
+  "dependencies": {
+
+  }
+}

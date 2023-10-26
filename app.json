@@ -1,0 +1,1193 @@
+{
+  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
+  "id": "nl.lrvdlinden.better-days",
+  "version": "1.1.2",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
+  "brandColor": "#045dd8",
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "Better Days",
+    "nl": "Better Days",
+    "de": "Better Days",
+    "fr": "Better Days",
+    "it": "Better Days",
+    "es": "Better Days",
+    "sv": "Better Days",
+    "no": "Better Days",
+    "da": "Better Days",
+    "ru": "Better Days",
+    "pl": "Better Days"
+  },
+  "description": {
+    "en": "Run your Flows during (Dutch) days",
+    "nl": "Voer je Flows uit tijdens (Nederlandse) dagen",
+    "de": "Führe deine Flows an (niederländischen) Tagen aus",
+    "fr": "Exécutez vos Flows pendant les jours (néerlandais)",
+    "it": "Esegui i tuoi Flows durante i giorni (olandesi)",
+    "es": "Ejecuta tus Flows durante los días (neerlandeses)",
+    "sv": "Kör dina Flows under (nederländska) dagar",
+    "no": "Kjør Flytene dine i løpet av (nederlandske) dager",
+    "da": "Kør dine Flows i løbet af (hollandske) dage",
+    "ru": "Запускайте свои потоки в течение (голландских) дней",
+    "pl": "Uruchom swoje przepływy w ciągu (holenderskich) dni"
+  },
+  "category": [
+    "tools"
+  ],
+  "tags": {
+    "en": [
+      "Tools",
+      "Days",
+      "Holiday",
+      "Better",
+      "Date",
+      "Dutch",
+      "Flag"
+    ],
+    "nl": [
+      "Tools",
+      "Dagen",
+      "Feestdagen",
+      "Betere",
+      "Datum",
+      "Nederlands",
+      "Vlag"
+    ],
+    "de": [
+      "Werkzeuge",
+      "Tage",
+      "Feiertage",
+      "Besser",
+      "Datum",
+      "Niederländisch",
+      "Flagge"
+    ],
+    "fr": [
+      "Outils",
+      "Jours",
+      "Jour férié",
+      "Mieux",
+      "Date",
+      "Néerlandais",
+      "Drapeau"
+    ],
+    "it": [
+      "Strumenti",
+      "Giorni",
+      "Festività",
+      "Migliore",
+      "Data",
+      "Olandese",
+      "Bandiera"
+    ],
+    "es": [
+      "Herramientas",
+      "Días",
+      "Día festivo",
+      "Mejor",
+      "Fecha",
+      "Holandés",
+      "Bandera"
+    ],
+    "sv": [
+      "Verktyg",
+      "Dagar",
+      "Helgdag",
+      "Bättre",
+      "Datum",
+      "Holländska",
+      "Flagga"
+    ],
+    "no": [
+      "Verktøy",
+      "Dager",
+      "Helligdag",
+      "Bedre",
+      "Dato",
+      "Nederlandsk",
+      "Flagg"
+    ],
+    "da": [
+      "Værktøjer",
+      "Dage",
+      "Helligdage",
+      "Bedre",
+      "Dato",
+      "Hollandsk",
+      "Flag"
+    ],
+    "ru": [
+      "Инструменты",
+      "Дни",
+      "Праздник",
+      "Лучше",
+      "Дата",
+      "Голландский",
+      "Флаг"
+    ],
+    "pl": [
+      "Narzędzia",
+      "Dni",
+      "Święto",
+      "Lepszy",
+      "Data",
+      "Holenderski",
+      "Flaga"
+    ]
+  },
+  "language": {
+    "en": "en",
+    "nl": "nl",
+    "de": "de",
+    "fr": "fr",
+    "it": "it",
+    "es": "es",
+    "sv": "sv",
+    "no": "no",
+    "da": "da",
+    "ru": "ru",
+    "pl": "pl"
+  },
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.jpg",
+    "large": "/assets/images/large.jpg",
+    "xlarge": "/assets/images/xlarge.jpg"
+  },
+  "author": {
+    "name": "Léon van der Linden"
+  },
+  "contributors": {
+    "translators": [
+      {
+        "name": "🇬🇧 Léon"
+      },
+      {
+        "name": "🇳🇱 Léon"
+      }
+    ]
+  },
+  "contributing": {
+    "donate": {
+      "paypal": {
+        "username": "lrvdlinden"
+      },
+      "bunq": {
+        "username": "lrvdlinden"
+      }
+    }
+  },
+  "bugs": {
+    "url": "https://community.homey.app/t/app-pro-better-days-for-homey/92576"
+  },
+  "homepage": "https://homey.app/nl-nl/apps/author/5d4da77a2c836a50f6936070/page/0/",
+  "support": "https://community.homey.app/t/app-pro-better-days-for-homey/92576",
+  "homeyCommunityTopicId": 92576,
+  "flow": {
+    "triggers": [
+      {
+        "id": "countdown_timer_ended",
+        "title": {
+          "en": "Countdown Timer Ended for",
+          "nl": "Countdown Timer Beëindigd",
+          "de": "Countdown-Timer beendet",
+          "fr": "Compte à rebours terminé",
+          "it": "Timer con conto alla rovescia terminato",
+          "es": "Temporizador de cuenta regresiva terminado",
+          "sv": "Nedräkningstimer avslutad",
+          "no": "Nedtellingstimer avsluttet",
+          "da": "Nedtællingstimer afsluttet",
+          "ru": "Таймер обратного отсчета завершен",
+          "pl": "Odliczanie zakończone"
+        },
+        "titleFormatted": {
+          "en": "Countdown Timer Ended for [[event]]",
+          "nl": "Countdown Timer Beëindigd voor [[event]]",
+          "de": "Countdown-Timer beendet für [[event]]",
+          "fr": "Compte à rebours terminé pour [[event]]",
+          "it": "Timer con conto alla rovescia terminato per [[event]]",
+          "es": "Temporizador de cuenta regresiva terminado para [[event]]",
+          "sv": "Nedräkningstimer avslutad för [[event]]",
+          "no": "Nedtellingstimer avsluttet for [[event]]",
+          "da": "Nedtællingstimer afsluttet for [[event]]",
+          "ru": "Таймер обратного отсчета завершен для [[event]]",
+          "pl": "Odliczanie zakończone dla [[event]]"
+        },
+        "hint": {
+          "en": "Triggered when the countdown timer for an event has ended.",
+          "nl": "Geactiveerd wanneer de afteltimer voor een evenement is geëindigd.",
+          "de": "Ausgelöst, wenn der Countdown-Timer für eine Veranstaltung abgelaufen ist.",
+          "fr": "Déclenché lorsque le minuteur de compte à rebours pour un événement est terminé.",
+          "it": "Scattato quando il timer di conto alla rovescia per un evento è terminato.",
+          "es": "Activado cuando el temporizador de cuenta regresiva para un evento ha terminado.",
+          "sv": "Utlöst när nedräkningstimern för ett evenemang har avslutats.",
+          "no": "Utløst når nedtellingstimeren for en hendelse er avsluttet.",
+          "da": "Udløst, når nedtællingsuret til en begivenhed er udløbet.",
+          "ru": "Срабатывает, когда истекает таймер обратного отсчета для события.",
+          "pl": "Aktywowane, gdy minutnik odliczania dla wydarzenia dobiegnie końca."
+        },
+        "args": [
+          {
+            "name": "event",
+            "type": "text",
+            "placeholder": {
+              "en": "Name of the event.",
+              "nl": "Naam van het evenement.",
+              "de": "Name der Veranstaltung.",
+              "fr": "Nom de l'événement.",
+              "it": "Nome dell'evento.",
+              "es": "Nombre del evento.",
+              "sv": "Namn på evenemanget.",
+              "no": "Navn på arrangementet.",
+              "da": "Navn på begivenheden.",
+              "ru": "Название события.",
+              "pl": "Nazwa wydarzenia."
+            }
+          }
+        ],
+        "tokens": [
+          {
+            "name": "event",
+            "type": "string",
+            "title": {
+              "en": "Event Name",
+              "nl": "Naam evenement",
+              "de": "Ereignisname",
+              "fr": "Nom de l'événement",
+              "it": "Nome dell'evento",
+              "es": "Nombre del evento",
+              "sv": "Evenemangsnamn",
+              "no": "Navn på arrangementet",
+              "da": "Navn på begivenheden",
+              "ru": "Имя события",
+              "pl": "Nazwa wydarzenia"
+            }
+          }
+        ]
+      },
+      {
+        "id": "dutch-flag-day",
+        "title": {
+          "en": "Dutch Flag Day",
+          "nl": "Nederlandse Vlagdag",
+          "de": "Niederländischer Flaggentag",
+          "fr": "Jour du drapeau néerlandais",
+          "it": "Giornata della bandiera olandese",
+          "es": "Día de la bandera neerlandesa",
+          "sv": "Nederländska flaggdagen",
+          "no": "Nederlandsk flaggdag",
+          "da": "Hollandske flagdag",
+          "ru": "Голландский День флага",
+          "pl": "Holenderski Dzień Flagi"
+        },
+        "titleFormatted": {
+          "en": "Today is a Dutch Flag Day",
+          "nl": "Vandaag is het een Nederlandse Vlagdag",
+          "de": "Heute ist ein niederländischer Flaggentag",
+          "fr": "Aujourd'hui, c'est un jour du drapeau néerlandais",
+          "it": "Oggi è un giorno della bandiera olandese",
+          "es": "Hoy es un día de la bandera de los Países Bajos",
+          "sv": "Idag är det en nederländsk flaggdag",
+          "no": "I dag er det en nederlandsk flaggdag",
+          "da": "I dag er det en nederlandsk flagdag",
+          "ru": "Сегодня голландский день флага",
+          "pl": "Dziś jest holenderskim dniem flagi"
+        },
+        "hint": {
+          "en": "Trigger when there is today a Flag Day",
+          "nl": "Trigger wanneer er vandaag een vlagdag is",
+          "de": "Auslösen, wenn heute ein Flaggentag ist",
+          "fr": "Déclencher lorsqu'il y a aujourd'hui une journée du drapeau",
+          "it": "Scatta quando oggi è una giornata della bandiera",
+          "es": "Activar cuando hoy sea un Día de la Bandera",
+          "sv": "Utlös när det är en flaggdag idag",
+          "no": "Utløs når det er flaggdag i dag",
+          "da": "Udløs, når der i dag er Flagdag",
+          "ru": "Сработать, когда сегодня День флага",
+          "pl": "Wyzwalaj, gdy dzisiaj jest Dzień Flagi"
+        },
+        "tokens": [
+          {
+            "name": "flagDay",
+            "type": "string",
+            "title": {
+              "en": "Today's flag day",
+              "nl": "Vlagdag vandaag",
+              "de": "Flaggentag heute",
+              "fr": "Jour du drapeau aujourd'hui",
+              "it": "Giorno della bandiera oggi",
+              "es": "Día de la bandera hoy",
+              "sv": "Dagens flaggdag",
+              "no": "Dagens flaggdag",
+              "da": "Dagens flagdag",
+              "ru": "Флаг сегодня",
+              "pl": "Dziś jest Dniem Flagi"
+            }
+          }
+        ]
+      },
+      {
+        "id": "today_is_a_day",
+        "title": {
+          "en": "Today is a",
+          "nl": "Vandaag is een",
+          "de": "Heute ist ein",
+          "fr": "Aujourd'hui est un",
+          "it": "Oggi è un",
+          "es": "Hoy es un",
+          "sv": "Idag är en",
+          "no": "I dag er en",
+          "da": "I dag er en",
+          "ru": "Сегодня",
+          "pl": "Dziś jest"
+        },
+        "titleFormatted": {
+          "en": "Today is an [[dayOfWeek]]",
+          "nl": "Vandaag is het een [[dayOfWeek]]",
+          "de": "Heute ist ein [[dayOfWeek]]",
+          "fr": "Aujourd'hui, c'est un [[dayOfWeek]]",
+          "it": "Oggi è un [[dayOfWeek]]",
+          "es": "Hoy es un [[dayOfWeek]]",
+          "sv": "Idag är det en [[dayOfWeek]]",
+          "no": "I dag er det en [[dayOfWeek]]",
+          "da": "I dag er det en [[dayOfWeek]]",
+          "ru": "Сегодня [[dayOfWeek]]",
+          "pl": "Dziś jest [[dayOfWeek]]"
+        },
+        "args": [
+          {
+            "name": "dayOfWeek",
+            "type": "dropdown",
+            "placeholder": {
+              "en": "Select a day",
+              "nl": "Selecteer een dag",
+              "de": "Wähle einen Tag",
+              "fr": "Sélectionnez un jour",
+              "it": "Seleziona un giorno",
+              "es": "Selecciona un día",
+              "sv": "Välj en dag",
+              "no": "Velg en dag",
+              "da": "Vælg en dag",
+              "ru": "Выберите день",
+              "pl": "Wybierz dzień"
+            },
+            "values": [
+              {
+                "id": "Monday",
+                "label": {
+                  "en": "Monday",
+                  "nl": "Maandag",
+                  "de": "Montag",
+                  "fr": "Lundi",
+                  "it": "Lunedì",
+                  "es": "Lunes",
+                  "sv": "Måndag",
+                  "no": "Mandag",
+                  "da": "Mandag",
+                  "ru": "Понедельник",
+                  "pl": "Poniedziałek"
+                }
+              },
+              {
+                "id": "Tuesday",
+                "label": {
+                  "en": "Tuesday",
+                  "nl": "Dinsdag",
+                  "de": "Dienstag",
+                  "fr": "Mardi",
+                  "it": "Martedì",
+                  "es": "Martes",
+                  "sv": "Tisdag",
+                  "no": "Tirsdag",
+                  "da": "Tirsdag",
+                  "ru": "Вторник",
+                  "pl": "Wtorek"
+                }
+              },
+              {
+                "id": "Wednesday",
+                "label": {
+                  "en": "Wednesday",
+                  "nl": "Woensdag",
+                  "de": "Mittwoch",
+                  "fr": "Mercredi",
+                  "it": "Mercoledì",
+                  "es": "Miércoles",
+                  "sv": "Onsdag",
+                  "no": "Onsdag",
+                  "da": "Onsdag",
+                  "ru": "Среда",
+                  "pl": "Środa"
+                }
+              },
+              {
+                "id": "Thursday",
+                "label": {
+                  "en": "Thursday",
+                  "nl": "Donderdag",
+                  "de": "Donnerstag",
+                  "fr": "Jeudi",
+                  "it": "Giovedì",
+                  "es": "Jueves",
+                  "sv": "Torsdag",
+                  "no": "Torsdag",
+                  "da": "Torsdag",
+                  "ru": "Четверг",
+                  "pl": "Czwartek"
+                }
+              },
+              {
+                "id": "Friday",
+                "label": {
+                  "en": "Friday",
+                  "nl": "Vrijdag",
+                  "de": "Freitag",
+                  "fr": "Vendredi",
+                  "it": "Venerdì",
+                  "es": "Viernes",
+                  "sv": "Fredag",
+                  "no": "Fredag",
+                  "da": "Fredag",
+                  "ru": "Пятница",
+                  "pl": "Piątek"
+                }
+              },
+              {
+                "id": "Saturday",
+                "label": {
+                  "en": "Saturday",
+                  "nl": "Zaterdag",
+                  "de": "Samstag",
+                  "fr": "Samedi",
+                  "it": "Sabato",
+                  "es": "Sábado",
+                  "sv": "Lördag",
+                  "no": "Lørdag",
+                  "da": "Lørdag",
+                  "ru": "Суббота",
+                  "pl": "Sobota"
+                }
+              },
+              {
+                "id": "Sunday",
+                "label": {
+                  "en": "Sunday",
+                  "nl": "Zondag",
+                  "de": "Sonntag",
+                  "fr": "Dimanche",
+                  "it": "Domenica",
+                  "es": "Domingo",
+                  "sv": "Söndag",
+                  "no": "Søndag",
+                  "da": "Søndag",
+                  "ru": "Воскресенье",
+                  "pl": "Niedziela"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "conditions": [
+      {
+        "id": "condition-leap-year",
+        "title": {
+          "en": "Is a leap year",
+          "nl": "Is een schrikkeljaar",
+          "de": "Ist ein Schaltjahr",
+          "fr": "Est une année bissextile",
+          "it": "È un anno bisestile",
+          "es": "Es un año bisiesto",
+          "sv": "Är ett skottår",
+          "no": "Er et skuddår",
+          "da": "Er et skudår",
+          "ru": "Это високосный год",
+          "pl": "Jest rokiem przestępnym"
+        },
+        "titleFormatted": {
+          "en": "[[year]] !{{is a|isn't a}} leap year",
+          "nl": "[[year]] !{{is een|is geen}} schrikkeljaar",
+          "de": "[[year]] !{{ist ein|ist kein}} Schaltjahr",
+          "fr": "[[year]] !{{est une|n'est pas une}} année bissextile",
+          "it": "[[year]] !{{è un|non è un}} anno bisestile",
+          "es": "[[year]] !{{es un|no es un}} año bisiesto",
+          "sv": "[[year]] !{{är ett|är inte ett}} skottår",
+          "no": "[[year]] !{{er et|er ikke et}} skuddår",
+          "da": "[[year]] !{{er et|er ikke et}} skudår",
+          "ru": "[[year]] !{{високосный|не високосный}} год",
+          "pl": "[[year]] !{{jest|nie jest}} rokiem przestępnym"
+        },
+        "args": [
+          {
+            "type": "number",
+            "name": "year",
+            "placeholder": {
+              "en": "Year",
+              "nl": "Jaar",
+              "de": "Jahr",
+              "fr": "Année",
+              "it": "Anno",
+              "es": "Año",
+              "sv": "År",
+              "no": "År",
+              "da": "År",
+              "ru": "Год",
+              "pl": "Rok"
+            }
+          }
+        ]
+      },
+      {
+        "id": "dutch-flag-day",
+        "title": {
+          "en": "Dutch Flag Day",
+          "nl": "Nederlandse Vlagdag",
+          "de": "Niederländischer Flaggentag",
+          "fr": "Jour du drapeau néerlandais",
+          "it": "Giornata della bandiera olandese",
+          "es": "Día de la bandera neerlandesa",
+          "sv": "Nederländska flaggdagen",
+          "no": "Nederlandsk flaggdag",
+          "da": "Hollandske flagdag",
+          "ru": "Голландский День флага",
+          "pl": "Holenderski Dzień Flagi"
+        },
+        "titleFormatted": {
+          "en": "Today !{{is|isn't}} Dutch Flag Day",
+          "nl": "Vandaag !{{is een|is geen}} Nederlandse Vlagdag",
+          "de": "Heute !{{ist|ist kein}} Niederländischer Flaggentag",
+          "fr": "Aujourd'hui !{{est|n'est pas}} le Jour du drapeau néerlandais",
+          "it": "Oggi !{{è|non è}} il Giorno della bandiera olandese",
+          "es": "Hoy !{{es|no es}} el Día de la bandera neerlandesa",
+          "sv": "Idag !{{är|är inte}} Nederländska flaggdagen",
+          "no": "I dag !{{er|er ikke}} Nederlandsk flaggdag",
+          "da": "I dag !{{er|er ikke}} Hollandske flagdag",
+          "ru": "Сегодня !{{является|не является}} Голландский День флага",
+          "pl": "Dziś !{{jest|nie jest}} Holenderski Dzień Flagi"
+        },
+        "hint": {
+          "en": "Check if today is a Dutch Flag Day.",
+          "nl": "Controleer of vandaag een Nederlandse Vlagdag is.",
+          "de": "Überprüfen Sie, ob heute ein Niederländischer Flaggentag ist.",
+          "fr": "Vérifiez si aujourd'hui est le Jour du drapeau néerlandais.",
+          "it": "Verifica se oggi è il Giorno della bandiera olandese.",
+          "es": "Comprueba si hoy es el Día de la bandera neerlandesa.",
+          "sv": "Kontrollera om idag är Nederländska flaggdagen.",
+          "no": "Sjekk om i dag er nederlandsk flaggdag.",
+          "da": "Tjek om i dag er hollandsk flagdag.",
+          "ru": "Проверьте, является ли сегодня голландским Днем флага.",
+          "pl": "Sprawdź, czy dzisiaj jest Holenderskim Dniem Flagi."
+        },
+        "tokens": [
+          {
+            "name": "flagDay",
+            "type": "string",
+            "title": {
+              "en": "Today's flag day",
+              "nl": "Vlagdag vandaag",
+              "de": "Flaggentag heute",
+              "fr": "Jour du drapeau aujourd'hui",
+              "it": "Giorno della bandiera oggi",
+              "es": "Día de la bandera hoy",
+              "sv": "Dagens flaggdag",
+              "no": "Dagens flaggdag",
+              "da": "Dagens flagdag",
+              "ru": "Флаг сегодня",
+              "pl": "Dziś jest Dniem Flagi"
+            }
+          }
+        ]
+      },
+      {
+        "id": "dutch-public-holidays",
+        "title": {
+          "en": "Dutch Public Holidays",
+          "nl": "Nederlandse Wettelijke Feestdagen",
+          "de": "Niederländische Feiertage",
+          "fr": "Jours fériés néerlandais",
+          "it": "Giorni festivi olandesi",
+          "es": "Días festivos holandeses",
+          "sv": "Nederländska helgdagar",
+          "no": "Nederlandske helligdager",
+          "da": "Hollandske helligdage",
+          "ru": "Нидерландские государственные праздники",
+          "pl": "Holenderskie święta państwowe"
+        },
+        "titleFormatted": {
+          "en": "Today !{{is an|isn't}} Dutch holiday",
+          "nl": "Vandaag !{{is een|is geen}} Nederlandse feestdag",
+          "de": "Heute !{{ist ein|ist kein}} niederländischer Feiertag",
+          "fr": "Aujourd'hui !{{est un|n'est pas un}} jour férié néerlandais",
+          "it": "Oggi !{{è una|non è una}} festività olandese",
+          "es": "Hoy !{{es un|no es un}} día festivo neerlandés",
+          "sv": "Idag !{{är en|är inte en}} nederländsk helgdag",
+          "no": "I dag !{{er en|er ikke en}} nederlandsk helligdag",
+          "da": "I dag !{{er en|er ikke en}} hollandsk helligdag",
+          "ru": "Сегодня !{{является|не является}} нидерландским праздником",
+          "pl": "Dziś !{{jest|nie jest}} holenderskim świętem"
+        },
+        "hint": {
+          "en": "Check if today falls on a Dutch public holiday.",
+          "nl": "Controleer of vandaag valt op een Nederlandse wettelijke feestdag.",
+          "de": "Überprüfen Sie, ob heute auf einen niederländischen Feiertag fällt.",
+          "fr": "Vérifiez si aujourd'hui tombe un jour férié néerlandais.",
+          "it": "Verifica se oggi cade in un giorno festivo olandese.",
+          "es": "Comprueba si hoy cae en un día festivo holandés.",
+          "sv": "Kontrollera om idag faller på en nederländsk helgdag.",
+          "no": "Sjekk om i dag faller på en nederlandsk helligdag.",
+          "da": "Tjek om i dag falder på en hollandsk helligdag.",
+          "ru": "Проверьте, выпадает ли сегодня на государственный праздник в Нидерландах.",
+          "pl": "Sprawdź, czy dzisiaj przypada na holenderskie święto państwowe."
+        },
+        "tokens": [
+          {
+            "name": "flagDay",
+            "type": "string",
+            "title": {
+              "en": "Public Holiday name",
+              "nl": "Naam van feestdag",
+              "de": "Name des Feiertags",
+              "fr": "Nom du jour férié",
+              "it": "Nome del giorno festivo",
+              "es": "Nombre del día festivo",
+              "sv": "Namn på helgdag",
+              "no": "Navn på helligdag",
+              "da": "Navn på helligdag",
+              "ru": "Название праздника",
+              "pl": "Nazwa święta"
+            }
+          }
+        ]
+      },
+      {
+        "id": "is_race_day",
+        "title": {
+          "en": "Is it a Race Day",
+          "nl": "Is het een racedag",
+          "de": "Ist es ein Renntag",
+          "fr": "Est-ce un jour de course",
+          "it": "È un giorno di gara",
+          "es": "¿Es un día de carrera",
+          "sv": "Är det en racedag",
+          "no": "Er det en løpsdag",
+          "da": "Er det en løbsdag",
+          "ru": "Это день гонки",
+          "pl": "Czy to dzień wyścigu"
+        },
+        "titleFormatted": {
+          "en": "Today !{{is a|isn't a}} Race Day",
+          "nl": "Vandaag !{{is een|is geen}} Race Dag",
+          "de": "Heute !{{ist ein|ist kein}} Renntag",
+          "fr": "Aujourd'hui !{{est un|n'est pas un}} Jour de Course",
+          "it": "Oggi !{{è una|non è una}} Giornata di gara",
+          "es": "Hoy !{{es un|no es un}} Día de Carreras",
+          "sv": "Idag !{{är en|är inte en}} Racingdag",
+          "no": "I dag !{{er en|er ikke en}} Løpsdag",
+          "da": "I dag !{{er en|er ikke en}} Løbsdag",
+          "ru": "Сегодня !{{есть|нет}} День гонки",
+          "pl": "Dziś !{{jest|nie jest}} Dniem Wyścigów"
+        },
+        "hint": {
+          "en": "Check if today is a race day and set the race name as a token.",
+          "nl": "Controleer of het vandaag een racedag is en stel de naam van de race in als token.",
+          "de": "Überprüfen Sie, ob heute ein Renntag ist, und setzen Sie den Namen des Rennens als Token.",
+          "fr": "Vérifiez si aujourd'hui est un jour de course et définissez le nom de la course comme jeton.",
+          "it": "Verifica se oggi è un giorno di gara e imposta il nome della gara come token.",
+          "es": "Comprueba si hoy es un día de carrera y establece el nombre de la carrera como token.",
+          "sv": "Kontrollera om det är en racedag idag och ställ in racenamnet som token.",
+          "no": "Sjekk om det er en løpsdag i dag og sett løpets navn som en token.",
+          "da": "Tjek om det er en løbsdag i dag, og indstil løbets navn som en token.",
+          "ru": "Проверьте, является ли сегодня днем гонки, и установите имя гонки в виде маркера.",
+          "pl": "Sprawdź, czy dzisiaj jest dniem wyścigu i ustaw nazwę wyścigu jako token."
+        }
+      },
+      {
+        "id": "today_is_a_day",
+        "title": {
+          "en": "Today is a",
+          "nl": "Vandaag is een",
+          "de": "Heute ist ein",
+          "fr": "Aujourd'hui est un",
+          "it": "Oggi è un",
+          "es": "Hoy es un",
+          "sv": "Idag är en",
+          "no": "I dag er en",
+          "da": "I dag er en",
+          "ru": "Сегодня",
+          "pl": "Dziś jest"
+        },
+        "titleFormatted": {
+          "en": "Today !{{is an|isn't an}} [[dayOfWeek]]",
+          "nl": "Vandaag !{{is een|is geen}} [[dayOfWeek]]",
+          "de": "Heute !{{ist ein|ist kein}} [[dayOfWeek]]",
+          "fr": "Aujourd'hui !{{est un|n'est pas un}} [[dayOfWeek]]",
+          "it": "Oggi !{{è un|non è un}} [[dayOfWeek]]",
+          "es": "Hoy !{{es un|no es un}} [[dayOfWeek]]",
+          "sv": "Idag !{{är en|är inte en}} [[dayOfWeek]]",
+          "no": "I dag !{{er en|er ikke en}} [[dayOfWeek]]",
+          "da": "I dag !{{er en|er ikke en}} [[dayOfWeek]]",
+          "ru": "Сегодня !{{выходной|не выходной}} [[dayOfWeek]]",
+          "pl": "Dziś !{{jest|nie jest}} [[dayOfWeek]]"
+        },
+        "hint": {
+          "en": "Check if today is a specific day of the week",
+          "nl": "Controleer of vandaag een specifieke dag van de week is",
+          "de": "Überprüfen, ob heute ein bestimmter Wochentag ist",
+          "fr": "Vérifiez si aujourd'hui est un jour spécifique de la semaine",
+          "it": "Verifica se oggi è un giorno specifico della settimana",
+          "es": "Comprueba si hoy es un día específico de la semana",
+          "sv": "Kontrollera om idag är en specifik dag i veckan",
+          "no": "Sjekk om i dag er en bestemt ukedag",
+          "da": "Tjek om i dag er en bestemt dag i ugen",
+          "ru": "Проверьте, является ли сегодня определенным днем недели",
+          "pl": "Sprawdź, czy dzisiaj jest konkretnym dniem tygodnia"
+        },
+        "args": [
+          {
+            "name": "dayOfWeek",
+            "type": "dropdown",
+            "placeholder": {
+              "en": "Select a day",
+              "nl": "Selecteer een dag",
+              "de": "Wähle einen Tag",
+              "fr": "Sélectionnez un jour",
+              "it": "Seleziona un giorno",
+              "es": "Selecciona un día",
+              "sv": "Välj en dag",
+              "no": "Velg en dag",
+              "da": "Vælg en dag",
+              "ru": "Выберите день",
+              "pl": "Wybierz dzień"
+            },
+            "values": [
+              {
+                "id": "Monday",
+                "label": {
+                  "en": "Monday",
+                  "nl": "Maandag",
+                  "de": "Montag",
+                  "fr": "Lundi",
+                  "it": "Lunedì",
+                  "es": "Lunes",
+                  "sv": "Måndag",
+                  "no": "Mandag",
+                  "da": "Mandag",
+                  "ru": "Понедельник",
+                  "pl": "Poniedziałek"
+                }
+              },
+              {
+                "id": "Tuesday",
+                "label": {
+                  "en": "Tuesday",
+                  "nl": "Dinsdag",
+                  "de": "Dienstag",
+                  "fr": "Mardi",
+                  "it": "Martedì",
+                  "es": "Martes",
+                  "sv": "Tisdag",
+                  "no": "Tirsdag",
+                  "da": "Tirsdag",
+                  "ru": "Вторник",
+                  "pl": "Wtorek"
+                }
+              },
+              {
+                "id": "Wednesday",
+                "label": {
+                  "en": "Wednesday",
+                  "nl": "Woensdag",
+                  "de": "Mittwoch",
+                  "fr": "Mercredi",
+                  "it": "Mercoledì",
+                  "es": "Miércoles",
+                  "sv": "Onsdag",
+                  "no": "Onsdag",
+                  "da": "Onsdag",
+                  "ru": "Среда",
+                  "pl": "Środa"
+                }
+              },
+              {
+                "id": "Thursday",
+                "label": {
+                  "en": "Thursday",
+                  "nl": "Donderdag",
+                  "de": "Donnerstag",
+                  "fr": "Jeudi",
+                  "it": "Giovedì",
+                  "es": "Jueves",
+                  "sv": "Torsdag",
+                  "no": "Torsdag",
+                  "da": "Torsdag",
+                  "ru": "Четверг",
+                  "pl": "Czwartek"
+                }
+              },
+              {
+                "id": "Friday",
+                "label": {
+                  "en": "Friday",
+                  "nl": "Vrijdag",
+                  "de": "Freitag",
+                  "fr": "Vendredi",
+                  "it": "Venerdì",
+                  "es": "Viernes",
+                  "sv": "Fredag",
+                  "no": "Fredag",
+                  "da": "Fredag",
+                  "ru": "Пятница",
+                  "pl": "Piątek"
+                }
+              },
+              {
+                "id": "Saturday",
+                "label": {
+                  "en": "Saturday",
+                  "nl": "Zaterdag",
+                  "de": "Samstag",
+                  "fr": "Samedi",
+                  "it": "Sabato",
+                  "es": "Sábado",
+                  "sv": "Lördag",
+                  "no": "Lørdag",
+                  "da": "Lørdag",
+                  "ru": "Суббота",
+                  "pl": "Sobota"
+                }
+              },
+              {
+                "id": "Sunday",
+                "label": {
+                  "en": "Sunday",
+                  "nl": "Zondag",
+                  "de": "Sonntag",
+                  "fr": "Dimanche",
+                  "it": "Domenica",
+                  "es": "Domingo",
+                  "sv": "Söndag",
+                  "no": "Søndag",
+                  "da": "Søndag",
+                  "ru": "Воскресенье",
+                  "pl": "Niedziela"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "today_is_a_weekend",
+        "title": {
+          "en": "Today is a weekend day",
+          "nl": "Vandaag is een weekenddag",
+          "de": "Heute ist ein Wochenendtag",
+          "fr": "Aujourd'hui est un jour de week-end",
+          "it": "Oggi è un giorno del weekend",
+          "es": "Hoy es un día de fin de semana",
+          "sv": "Idag är en helgdag",
+          "no": "I dag er en helgedag",
+          "da": "I dag er en weekenddag",
+          "ru": "Сегодня выходной день",
+          "pl": "Dziś jest dniem weekendu"
+        },
+        "titleFormatted": {
+          "en": "Today !{{is an|isn't an}} weekend day",
+          "nl": "Vandaag !{{is een|is geen}} weekenddag",
+          "de": "Heute !{{ist ein|ist kein}} Wochenendtag",
+          "fr": "Aujourd'hui !{{est un|n'est pas un}} jour de week-end",
+          "it": "Oggi !{{è un|non è un}} giorno del weekend",
+          "es": "Hoy !{{es un|no es un}} día de fin de semana",
+          "sv": "Idag !{{är en|är inte en}} helgdag",
+          "no": "I dag !{{er en|er ikke en}} helgedag",
+          "da": "I dag !{{er en|er ikke en}} weekenddag",
+          "ru": "Сегодня !{{выходной|не выходной}} день",
+          "pl": "Dziś !{{jest|nie jest}} dniem weekendu"
+        }
+      },
+      {
+        "id": "today_is_a_working_day",
+        "title": {
+          "en": "Today is a working day",
+          "nl": "Vandaag is een werkdag",
+          "de": "Heute ist ein Arbeitstag",
+          "fr": "Aujourd'hui est un jour ouvré",
+          "it": "Oggi è un giorno lavorativo",
+          "es": "Hoy es un día laborable",
+          "sv": "Idag är en arbetsdag",
+          "no": "I dag er en arbeidsdag",
+          "da": "I dag er en arbejdsdag",
+          "ru": "Сегодня рабочий день",
+          "pl": "Dziś jest dniem roboczym"
+        },
+        "titleFormatted": {
+          "en": "Today !{{is an|isn't an}} working day",
+          "nl": "Vandaag !{{is een|is geen}} werkdag",
+          "de": "Heute !{{ist ein|ist kein}} Arbeitstag",
+          "fr": "Aujourd'hui !{{est un|n'est pas un}} jour de travail",
+          "it": "Oggi !{{è un|non è un}} giorno lavorativo",
+          "es": "Hoy !{{es un|no es un}} día laborable",
+          "sv": "Idag !{{är en|är inte en}} arbetsdag",
+          "no": "I dag !{{er en|er ikke en}} arbeidsdag",
+          "da": "I dag !{{er en|er ikke en}} arbejdsdag",
+          "ru": "Сегодня !{{выходной|не выходной}} день",
+          "pl": "Dziś !{{jest dniem|nie jest dniem}} roboczym"
+        }
+      }
+    ],
+    "actions": [
+      {
+        "id": "calculate-days-between-dates",
+        "title": {
+          "en": "Calculate Days Between Dates",
+          "nl": "Bereken Dagen Tussen Datums",
+          "de": "Berechne Tage zwischen Daten",
+          "fr": "Calculer les jours entre les dates",
+          "it": "Calcola i giorni tra le date",
+          "es": "Calcular días entre fechas",
+          "sv": "Beräkna dagar mellan datum",
+          "no": "Beregn dager mellom datoer",
+          "da": "Beregn dage mellem datoer",
+          "ru": "Рассчитать дни между датами",
+          "pl": "Oblicz dni między datami"
+        },
+        "titleFormatted": {
+          "en": "Calculate days between [[date1]] and [[date2]]",
+          "nl": "Bereken dagen tussen [[date1]] en [[date2]]",
+          "de": "Berechne Tage zwischen [[date1]] und [[date2]]",
+          "fr": "Calculer les jours entre [[date1]] et [[date2]]",
+          "it": "Calcola i giorni tra [[date1]] e [[date2]]",
+          "es": "Calcular días entre [[date1]] y [[date2]]",
+          "sv": "Beräkna dagar mellan [[date1]] och [[date2]]",
+          "no": "Beregn dager mellom [[date1]] og [[date2]]",
+          "da": "Beregn dage mellem [[date1]] og [[date2]]",
+          "ru": "Рассчитать дни между [[date1]] и [[date2]]",
+          "pl": "Oblicz dni między [[date1]] i [[date2]]"
+        },
+        "args": [
+          {
+            "type": "text",
+            "name": "date1",
+            "placeholder": {
+              "en": "Date 1 (DD-MM-YYYY)",
+              "nl": "Datum 1 (DD-MM-JJJJ)",
+              "de": "Datum 1 (TT-MM-JJJJ)",
+              "fr": "Date 1 (JJ-MM-AAAA)",
+              "it": "Data 1 (GG-MM-AAAA)",
+              "es": "Fecha 1 (DD-MM-AAAA)",
+              "sv": "Datum 1 (DD-MM-ÅÅÅÅ)",
+              "no": "Dato 1 (DD-MM-ÅÅÅÅ)",
+              "da": "Dato 1 (DD-MM-ÅÅÅÅ)",
+              "ru": "Дата 1 (ДД-ММ-ГГГГ)",
+              "pl": "Data 1 (DD-MM-RRRR)"
+            }
+          },
+          {
+            "type": "text",
+            "name": "date2",
+            "placeholder": {
+              "en": "Date 2 (DD-MM-YYYY)",
+              "nl": "Datum 2 (DD-MM-JJJJ)",
+              "de": "Datum 2 (TT-MM-JJJJ)",
+              "fr": "Date 2 (JJ-MM-AAAA)",
+              "it": "Data 2 (GG-MM-AAAA)",
+              "es": "Fecha 2 (DD-MM-AAAA)",
+              "sv": "Datum 2 (DD-MM-ÅÅÅÅ)",
+              "no": "Dato 2 (DD-MM-ÅÅÅÅ)",
+              "da": "Dato 2 (DD-MM-ÅÅÅÅ)",
+              "ru": "Дата 2 (ДД-ММ-ГГГГ)",
+              "pl": "Data 2 (DD-MM-RRRR)"
+            }
+          }
+        ],
+        "tokens": [
+          {
+            "name": "result",
+            "type": "number",
+            "title": {
+              "en": "Days Between",
+              "nl": "Dagen Tussen",
+              "de": "Tage zwischen",
+              "fr": "Jours entre",
+              "it": "Giorni tra",
+              "es": "Días entre",
+              "sv": "Dagar mellan",
+              "no": "Dager mellom",
+              "da": "Dage mellem",
+              "ru": "Дней между",
+              "pl": "Dni pomiędzy"
+            }
+          }
+        ]
+      },
+      {
+        "id": "create_countdown_timer",
+        "title": {
+          "en": "Create Countdown Timer",
+          "nl": "Maak een Countdown Timer",
+          "de": "Countdown-Timer erstellen",
+          "fr": "Créer un compte à rebours",
+          "it": "Crea un timer con conto alla rovescia",
+          "es": "Crear un temporizador de cuenta regresiva",
+          "sv": "Skapa en nedräkningstimer",
+          "no": "Opprett en nedtellingstimer",
+          "da": "Opret en nedtællingstimer",
+          "ru": "Создать таймер обратного отсчета",
+          "pl": "Utwórz odliczanie"
+        },
+        "titleFormatted": {
+          "en": "Create a countdown timer for [[number]] [[dropdown]] [[event]]",
+          "nl": "Maak een countdown-timer voor [[number]] [[dropdown]] [[event]]",
+          "de": "Erstelle einen Countdown-Timer für [[number]] [[dropdown]] [[event]]",
+          "fr": "Créez un compte à rebours pour [[number]] [[dropdown]] [[event]]",
+          "it": "Crea un timer con conto alla rovescia per [[number]] [[dropdown]] [[event]]",
+          "es": "Crea un temporizador de cuenta regresiva para [[number]] [[dropdown]] [[event]]",
+          "sv": "Skapa en nedräkningstimer för [[number]] [[dropdown]] [[event]]",
+          "no": "Opprett en nedtellingstimer for [[number]] [[dropdown]] [[event]]",
+          "da": "Opret en nedtællingstimer for [[number]] [[dropdown]] [[event]]",
+          "ru": "Создайте таймер обратного отсчета на [[number]] [[dropdown]] [[event]]",
+          "pl": "Utwórz odliczanie dla [[number]] [[dropdown]] [[event]]"
+        },
+        "hint": {
+          "en": "Set a timer for [[event]] in [[number]] [[dropdown]].",
+          "nl": "Stel een timer in voor [[event]] in [[number]] [[dropdown]].",
+          "de": "Stellen Sie einen Timer für [[event]] in [[number]] [[dropdown]] ein.",
+          "fr": "Définissez un compte à rebours pour [[event]] en [[number]] [[dropdown]].",
+          "it": "Imposta un timer per [[event]] in [[number]] [[dropdown]].",
+          "es": "Establece un temporizador para [[event]] en [[number]] [[dropdown]].",
+          "sv": "Skapa en timer för [[event]] i [[number]] [[dropdown]].",
+          "no": "Angi en nedtellingstimer for [[event]] i [[number]] [[dropdown]].",
+          "da": "Indstil en nedtællingstimer for [[event]] i [[number]] [[dropdown]].",
+          "ru": "Установите таймер для [[event]] в [[number]] [[dropdown]].",
+          "pl": "Ustaw odliczanie dla [[event]] w [[number]] [[dropdown]]."
+        },
+        "args": [
+          {
+            "name": "event",
+            "type": "text",
+            "placeholder": {
+              "en": "Event name",
+              "nl": "Naam evenement",
+              "de": "Ereignisname",
+              "fr": "Nom de l'événement",
+              "it": "Nome dell'evento",
+              "es": "Nombre del evento",
+              "sv": "Evenemangsnamn",
+              "no": "Navn på arrangementet",
+              "da": "Navn på begivenheden",
+              "ru": "Имя события",
+              "pl": "Nazwa wydarzenia"
+            }
+          },
+          {
+            "name": "number",
+            "type": "number",
+            "placeholder": {
+              "en": "Number",
+              "nl": "Aantal",
+              "de": "Anzahl",
+              "fr": "Nombre",
+              "it": "Numero",
+              "es": "Número",
+              "sv": "Antal",
+              "no": "Antall",
+              "da": "Antal",
+              "ru": "Количество",
+              "pl": "Liczba"
+            }
+          },
+          {
+            "name": "dropdown",
+            "type": "dropdown",
+            "placeholder": {
+              "en": "Select a unit",
+              "nl": "Selecteer een eenheid",
+              "de": "Einheit auswählen",
+              "fr": "Sélectionnez une unité",
+              "it": "Seleziona un'unità",
+              "es": "Selecciona una unidad",
+              "sv": "Välj en enhet",
+              "no": "Velg en enhet",
+              "da": "Vælg en enhed",
+              "ru": "Выберите единицу",
+              "pl": "Wybierz jednostkę"
+            },
+            "values": [
+              {
+                "id": "Seconds",
+                "label": {
+                  "en": "Seconds",
+                  "nl": "Seconden",
+                  "de": "Sekunden",
+                  "fr": "Secondes",
+                  "it": "Secondi",
+                  "es": "Segundos",
+                  "sv": "Sekunder",
+                  "no": "Sekunder",
+                  "da": "Sekunder",
+                  "ru": "Секунды",
+                  "pl": "Sekundy"
+                }
+              },
+              {
+                "id": "Minutes",
+                "label": {
+                  "en": "Minutes",
+                  "nl": "Minuten",
+                  "de": "Minuten",
+                  "fr": "Minutes",
+                  "it": "Minuti",
+                  "es": "Minutos",
+                  "sv": "Minuter",
+                  "no": "Minutter",
+                  "da": "Minutter",
+                  "ru": "Минуты",
+                  "pl": "Minuty"
+                }
+              },
+              {
+                "id": "Hours",
+                "label": {
+                  "en": "Hours",
+                  "nl": "Uren",
+                  "de": "Stunden",
+                  "fr": "Heures",
+                  "it": "Ore",
+                  "es": "Horas",
+                  "sv": "Timmar",
+                  "no": "Timer",
+                  "da": "Timer",
+                  "ru": "Часы",
+                  "pl": "Godziny"
+                }
+              }
+            ]
+          }
+        ],
+        "tokens": [
+          {
+            "name": "event",
+            "type": "string",
+            "title": {
+              "en": "Event Name",
+              "nl": "Naam evenement",
+              "de": "Ereignisname",
+              "fr": "Nom de l'événement",
+              "it": "Nome dell'evento",
+              "es": "Nombre del evento",
+              "sv": "Evenemangsnamn",
+              "no": "Navn på arrangementet",
+              "da": "Navn på begivenheden",
+              "ru": "Имя события",
+              "pl": "Nazwa wydarzenia"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
